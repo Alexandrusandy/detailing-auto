@@ -21,7 +21,7 @@ const Navigation = () => {
     offset={-70}
     duration={500}
 >
-      <Nav.Link href="/Pretu">Despre Noi</Nav.Link> </Link>
+      <Nav.Link href="/Pretui">Despre Noi</Nav.Link> </Link>
        <Link
     activeClass="active"
     to="ServiciiID"
@@ -32,11 +32,11 @@ const Navigation = () => {
       <Nav.Link activeClassName="active" href="/Servicii">Servicii</Nav.Link></Link>
       <NavDropdown title="Preturi" id="collasible-nav-dropdown">
         <NavDropdown.Item href="/Preturiinterior">Detaiing Interior</NavDropdown.Item>     
-        <NavDropdown.Item href="./Preturi/Preturi.html">Detailing Exterior</NavDropdown.Item>
+        <NavDropdown.Item href="www.google.ro">Detailing Exterior</NavDropdown.Item>
       </NavDropdown>
     </Nav>
     <Nav>
-      <Nav.Link href="./Galerie/Galerie">Galerie Foto</Nav.Link>
+      <Nav.Link href="/Galerie">Galerie Foto</Nav.Link>
       <Nav.Link  href="/Contact">
         Contact
       </Nav.Link>
