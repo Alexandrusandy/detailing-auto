@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {HashRouter ,Route,Switch} from 'react-router-dom';
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import Particles from 'react-particles-js';
 
 import Navigation from './Navbar/Navbar';
@@ -31,7 +31,7 @@ function App() {
 
   return (
 
-<HashRouter>
+<BrowserRouter>
     <Particles className='particles'
           params={particlesOptions}
         />
@@ -51,7 +51,7 @@ function App() {
       
         </div>
 
- </HashRouter>
+ </BrowserRouter>
   );
 }
 
