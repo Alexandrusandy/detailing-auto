@@ -21,7 +21,7 @@ const Navigation = () => {
     offset={-70}
     duration={500}
 >
-      <Nav.Link href="/Pretui">Despre Noi</Nav.Link> </Link>
+      <Nav.Link href="/Despre Noi">Despre Noi</Nav.Link> </Link>
        <Link
     activeClass="active"
     to="ServiciiID"
