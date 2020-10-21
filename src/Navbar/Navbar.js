@@ -32,7 +32,7 @@ const Navigation = () => {
       <Nav.Link activeClassName="active" href="/Servicii">Servicii</Nav.Link></Link>
       <NavDropdown title="Preturi" id="collasible-nav-dropdown">
         <NavDropdown.Item href="/Preturiinterior">Detaiing Interior</NavDropdown.Item>     
-        <NavDropdown.Item href="www.google.ro">Detailing Exterior</NavDropdown.Item>
+        <NavDropdown.Item href="">Detailing Exterior</NavDropdown.Item>
       </NavDropdown>
     </Nav>
     <Nav>
