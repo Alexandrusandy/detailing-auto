@@ -60,7 +60,7 @@ const Navigation = () => {
     spy={true}
     smooth={true}
     offset={-240}
-    duration={300}
+    duration={10}
 >      <Nav.Link  href="./Contact/Contact"> Contact</Nav.Link>
 </Link>
     </Nav>
