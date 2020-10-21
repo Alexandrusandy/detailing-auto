@@ -19,7 +19,7 @@ import Footer from './Footer/Footer';
 const particlesOptions = {
   particles: {
     number: {
-      value: 60,
+      value: 30,
           density: {
         enable: true,
         value_area: 500

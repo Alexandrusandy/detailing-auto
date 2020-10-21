@@ -19,7 +19,7 @@ const Navigation = () => {
     spy={true}
     smooth={true}
     offset={-240}
-    duration={500}
+    duration={300}
 >
       <Nav.Link href="/Despre">Despre Noi</Nav.Link> </Link>
        <Link
@@ -28,7 +28,7 @@ const Navigation = () => {
     spy={true}
     smooth={true}
     offset={-240}
-    duration={500}>
+    duration={300}>
       <Nav.Link activeClassName="active" href="/Servicii">Servicii</Nav.Link></Link>
       <Link
     activeClass="active"
@@ -36,7 +36,7 @@ const Navigation = () => {
     spy={true}
     smooth={true}
     offset={-240}
-    duration={500}
+    duration={300}
 >      <Nav.Link href="./Galerie/Galerie">Galerie Foto</Nav.Link>
     </Link>
     </Nav>
@@ -48,7 +48,7 @@ const Navigation = () => {
     spy={true}
     smooth={true}
     offset={-240}
-    duration={500}
+    duration={300}
 >  
 <NavDropdown.Item href="./Preturiinterior">Detaiing Interior</NavDropdown.Item>   
     </Link> 
@@ -60,7 +60,7 @@ const Navigation = () => {
     spy={true}
     smooth={true}
     offset={-240}
-    duration={500}
+    duration={300}
 >      <Nav.Link  href="./Contact/Contact"> Contact</Nav.Link>
 </Link>
     </Nav>
