@@ -6,13 +6,12 @@ import { Link } from "react-scroll";
 
 
 const Navigation = () => {
-
 	return(
-   <div className="fix">
-    <Navbar  fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark" >
+   
+    <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark" >
   <Navbar.Brand href="./poza/Poza.js">Acasa</Navbar.Brand>
-  <Navbar aria-controls="responsive-navbar-nav" />
-  <Navbar  id="responsive-navbar-nav">
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
     <Link
     activeClass="active"
@@ -65,9 +64,8 @@ const Navigation = () => {
 >      <Nav.Link  href="./Contact/Contact"> Contact</Nav.Link>
 </Link>
     </Nav>
-  </Navbar>
+  </Navbar.Collapse>
 </Navbar>
-</div>
 
 )
 }
