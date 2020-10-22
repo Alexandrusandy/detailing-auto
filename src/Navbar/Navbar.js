@@ -1,63 +1,73 @@
-import React from 'react'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    
-  } from "react-router-dom";
-  import { Navbar,Nav,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
-  import Despre from '../despre/despre';
-import Galerie from '../Galerie/Galerie';
-import Contact from '../Contact/Contact';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavDropdown,Navbar,Nav, } from 'react-bootstrap';
 
-class Navigation extends React.Component{
+import { Link } from "react-scroll";
 
-    render(){
-        return(
-            <div>
-                <div className="row">
-                    <div className="col-md-12">
-                        <Router>
-                            <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-                                <Navbar.Brand href="#home">React Bootstrap Navbar</Navbar.Brand>
-                                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                                <Navbar.Collapse id="basic-navbar-nav">
-                                    <Nav className="mr-auto">
-                                    <Nav.Link href="/">Home</Nav.Link>
-                                    <Nav.Link href="/Galerie">Contact Us</Nav.Link>
-                                    <Nav.Link href="../Contact/Contact">About Us</Nav.Link>
-                                    <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                        <NavDropdown.Divider />
-                                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                                    </NavDropdown>
-                                    </Nav>
-                                    <Form inline>
-                                    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                                    <Button variant="outline-success">Search</Button>
-                                    </Form>
-                                </Navbar.Collapse>
-                            </Navbar>
-                            <br />
-                            <Switch>
-                                <Route exact path="/">
-                                    <Despre />
-                                </Route>
-                                <Route path="/Galerie">
-                                    <Galerie />
-                                </Route>
-                                <Route path="/Contact">
-                                    <Contact />
-                                </Route>
-                            </Switch>
-                        </Router>
-                    </div>
-                </div>
-            </div>
-        )  
-    }
+
+const Navigation = () => {
+  return(
+   
+    <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark" >
+  <Navbar.Brand href="./poza/Poza.js">Acasa</Navbar.Brand>
+  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  <Navbar.Collapse id="basic-navbar-nav">
+    <Nav className="mr-auto">
+    <Link
+    activeClass="active"
+    to="despre-noi"
+    spy={true}
+    smooth={true}
+    offset={-240}
+    duration={300}
+>
+      <Nav.Link href="/Despre">Despre Noi</Nav.Link> </Link>
+       <Link
+    activeClass="active"
+    to="ServiciiID"
+    spy={true}
+    smooth={true}
+    offset={-240}
+    duration={300}>
+      <Nav.Link activeClassName="active" href="/Servicii">Servicii</Nav.Link></Link>
+      <Link
+    activeClass="active"
+    to="galerie"
+    spy={true}
+    smooth={true}
+    offset={-240}
+    duration={300}
+>      <Nav.Link href="./Galerie/Galerie">Galerie Foto</Nav.Link>
+    </Link>
+    </Nav>
+    <Nav>
+    <NavDropdown title="Preturi" id="collasible-nav-dropdown">
+       <Link
+    activeClass="active"
+    to="interior"
+    spy={true}
+    smooth={true}
+    offset={-240}
+    duration={300}
+>  
+<NavDropdown.Item href="./Preturiinterior">Detaiing Interior</NavDropdown.Item>   
+    </Link> 
+        <NavDropdown.Item href="./Preturi/Preturi.html">Detailing Exterior</NavDropdown.Item>
+      </NavDropdown>
+     <Link
+    activeClass="active"
+    to="contact"
+    spy={true}
+    smooth={true}
+    offset={-240}
+    duration={10}
+>      <Nav.Link  href="./Contact/Contact"> Contact</Nav.Link>
+</Link>
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
+
+)
 }
 
 export default Navigation;
