@@ -8,10 +8,10 @@ import { Link } from "react-scroll";
 const Navigation = () => {
   return(
    
-    <Navbar sticky="top"  expand="lg" bg="dark" variant="dark" >
+    <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark" >
   <Navbar.Brand href="./poza/Poza.js">Acasa</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="basic-navbar-nav">
+  <Navbar.Collapse id="sidebar">
     <Nav className="mr-auto">
     <Link
     activeClass="active"
