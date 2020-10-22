@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter} from 'react-router-dom';
-import Particles from 'react-particles-js';
+/*import Particles from 'react-particles-js';*/
 
 import Navigation from './Navbar/Navbar';
 import Poza from './poza/Poza';
@@ -16,7 +16,7 @@ import Footer from './Footer/Footer';
 
 /*import Mapps from './Contact/Map';
 */
-const particlesOptions = {
+/*const particlesOptions = {
   particles: {
     number: {
       value: 30,
@@ -26,17 +26,17 @@ const particlesOptions = {
       }
     }
   }
-}
+}*/
               
 
 function App() {
 
   return (
 
-<BrowserRouter>
-    <Particles className='particles'
+<div>
+    {/*<Particles className='particles'
           params={particlesOptions}
-        />
+        />*/}
     <div className="App"> 
     <Navigation />
       <Poza /> 
@@ -50,7 +50,7 @@ function App() {
       
         </div>
 
- </BrowserRouter>
+ </div>
   );
 }
 
