@@ -11,7 +11,7 @@ const Navigation = () => {
     <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark" >
   <Navbar.Brand href="./poza/Poza.js">Acasa</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="sidebar">
+  <Navbar.Collapse id="collapsing">
     <Nav className="mr-auto">
     <Link
     activeClass="active"
