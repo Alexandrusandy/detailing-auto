@@ -1,85 +1,53 @@
-import React,{Component} from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavDropdown,Nav, } from 'react-bootstrap';
+import React from 'react'
 import {
-MDBNavbar, MDBNavbarBrand,   MDBNavbarToggler, MDBCollapse} from "mdbreact";
-import { Link } from "react-scroll";
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    useParams,
+  } from "react-router-dom";
+  import { Navbar,Nav,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
+  
 
+class Navigation extends React.Component{
 
-class Navigation extends Component {
-
-  state = {
-  isOpen: false
-};
-
-toggleCollapse = () => {
-  this.setState({ isOpen: !this.state.isOpen });
-}
-
-render() {
-	return(
-   
-    <MDBNavbar color="black"  sticky="top" dark expand="md">
-        <MDBNavbarBrand>
-          <strong className="white-text">Navbar</strong>
-        </MDBNavbarBrand>
-        <MDBNavbarToggler onClick={this.toggleCollapse} />
-        <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-    <Link
-    activeClass="active"
-    to="despre-noi"
-    spy={true}
-    smooth={true}
-    offset={-240}
-    duration={300}
->
-      <Nav.Link href="/Despre">Despre Noi</Nav.Link> </Link>
-       <Link
-    activeClass="active"
-    to="ServiciiID"
-    spy={true}
-    smooth={true}
-    offset={-240}
-    duration={300}>
-      <Nav.Link activeClassName="active" href="/Servicii">Servicii</Nav.Link></Link>
-      <Link
-    activeClass="active"
-    to="galerie"
-    spy={true}
-    smooth={true}
-    offset={-240}
-    duration={300}
->      <Nav.Link href="./Galerie/Galerie">Galerie Foto</Nav.Link>
-    </Link>
-   
-    <Nav>
-    <NavDropdown title="Preturi" id="collasible-nav-dropdown">
-       <Link
-    activeClass="active"
-    to="interior"
-    spy={true}
-    smooth={true}
-    offset={-240}
-    duration={300}
->  
-<NavDropdown.Item href="./Preturiinterior">Detaiing Interior</NavDropdown.Item>   
-    </Link> 
-        <NavDropdown.Item href="./Preturi/Preturi.html">Detailing Exterior</NavDropdown.Item>
-      </NavDropdown>
-     <Link
-    activeClass="active"
-    to="contact"
-    spy={true}
-    smooth={true}
-    offset={-240}
-    duration={10}
->      <Nav.Link  href="./Contact/Contact"> Contact</Nav.Link>
-</Link>
-    </Nav>
-     </MDBCollapse>
-      </MDBNavbar>
-);
-}
+    render(){
+        return(
+            <div>
+                <div className="row">
+                    <div className="col-md-12">
+                        <Router>
+                            <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
+                                <Navbar.Brand href="#home">React Bootstrap Navbar</Navbar.Brand>
+                                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                                <Navbar.Collapse id="basic-navbar-nav">
+                                    <Nav className="mr-auto">
+                                    <Nav.Link href="/">Home</Nav.Link>
+                                    <Nav.Link href="/about-us">Contact Us</Nav.Link>
+                                    <Nav.Link href="/contact-us">About Us</Nav.Link>
+                                    <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                        <NavDropdown.Divider />
+                                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                                    </NavDropdown>
+                                    </Nav>
+                                    <Form inline>
+                                    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                                    <Button variant="outline-success">Search</Button>
+                                    </Form>
+                                </Navbar.Collapse>
+                            </Navbar>
+                            <br />
+                            <Switch>
+                                
+                            </Switch>
+                        </Router>
+                    </div>
+                </div>
+            </div>
+        )  
+    }
 }
 
 export default Navigation;
