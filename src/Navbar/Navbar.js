@@ -2,11 +2,13 @@ import React from 'react'
 import {
     BrowserRouter as Router,
     Switch,
-   
+    Route,
     
   } from "react-router-dom";
   import { Navbar,Nav,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
-  
+  import Despre from '../despre/despre';
+import Galerie from '../Galerie/Galerie';
+import Contact from '../Contact/Contact';
 
 class Navigation extends React.Component{
 
@@ -22,8 +24,8 @@ class Navigation extends React.Component{
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="mr-auto">
                                     <Nav.Link href="/">Home</Nav.Link>
-                                    <Nav.Link href="/about-us">Contact Us</Nav.Link>
-                                    <Nav.Link href="/contact-us">About Us</Nav.Link>
+                                    <Nav.Link href="/Galerie">Contact Us</Nav.Link>
+                                    <Nav.Link href="../Contact/Contact">About Us</Nav.Link>
                                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -40,7 +42,15 @@ class Navigation extends React.Component{
                             </Navbar>
                             <br />
                             <Switch>
-                                
+                                <Route exact path="/">
+                                    <Despre />
+                                </Route>
+                                <Route path="/Galerie">
+                                    <Galerie />
+                                </Route>
+                                <Route path="/Contact">
+                                    <Contact />
+                                </Route>
                             </Switch>
                         </Router>
                     </div>
