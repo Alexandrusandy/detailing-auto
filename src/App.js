@@ -14,19 +14,7 @@ import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 
 
-/*import Mapps from './Contact/Map';
-*/
-const particlesOptions = {
-  particles: {
-    number: {
-      value: 30,
-          density: {
-        enable: true,
-        value_area: 500
-      }
-    }
-  }
-}
+
               
 
 function App() {
@@ -34,9 +22,7 @@ function App() {
   return (
 
 <BrowserRouter>
-    <Particles className='particles'
-          params={particlesOptions}
-        />
+ 
     <div className="App"> 
     <Navigation />
       <Poza /> 
