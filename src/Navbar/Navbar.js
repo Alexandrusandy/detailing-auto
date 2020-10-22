@@ -3,13 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavDropdown,Navbar,Nav, } from 'react-bootstrap';
 import './Navbar.css';
 
-import { Link } from "react-scroll";
-
+/*import { Link } from "react-scroll";
+*/
 
 const Navigation = () => {
   return(
    
-   <Navbar bg="light" expand="lg">
+   <Navbar bg="light" sticky="top"expand="lg">
   <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
