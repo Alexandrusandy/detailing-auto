@@ -13,7 +13,7 @@ const Navigation = () => {
   return(
    
     <Navbar  id="collapsing" sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark" >
-  <Navbar.Brand href="./poza/Poza.js">Acasa</Navbar.Brand>
+  <Navbar.Brand href="https://oro-detailing.netlify.app">Acasa</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="collapsing" >
     <Nav className="mr-auto">
@@ -34,13 +34,16 @@ const Navigation = () => {
     offset={-240}
     duration={300}>
       <Nav.Link activeClassName="active" href="/Servicii">Servicii</Nav.Link></Link>
-         <Nav.Link href="/Galerie">Galerie Foto</Nav.Link>
+         <Nav.Link>
+         <NavLink to="/Galerie">Galerie Foto</NavLink>
+         </Nav.Link>
    
     </Nav>
     <Nav>
     <NavDropdown title="Preturi" id="collasible-nav-dropdown">
     
-<NavDropdown.Item href="/Preturiinterior">Detaiing Interior</NavDropdown.Item>   
+<NavDropdown.Item> <NavLink to="/Preturiinterior">Detaiing Interior</NavLink>
+</NavDropdown.Item>   
     
         <NavDropdown.Item href="/Contact">Detailing Exterior</NavDropdown.Item>
       </NavDropdown>
