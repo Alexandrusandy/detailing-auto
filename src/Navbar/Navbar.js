@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavDropdown,Navbar,Nav, } from 'react-bootstrap';
 import './Navbar.css';
 /*import { Link } from "react-scroll";
-*/import {NavLink,Link} from 'react-router-dom';
+*/import {/*NavLink*/,Link} from 'react-router-dom';
 
 
 
