@@ -2,8 +2,9 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavDropdown,Navbar,Nav, } from 'react-bootstrap';
 import './Navbar.css';
-
 import { Link } from "react-scroll";
+
+
 
 
 const Navigation = () => {
@@ -31,39 +32,18 @@ const Navigation = () => {
     offset={-240}
     duration={300}>
       <Nav.Link activeClassName="active" href="/Servicii">Servicii</Nav.Link></Link>
-      <Link
-    activeClass="active"
-    to="galerie"
-    spy={true}
-    smooth={true}
-    offset={-240}
-    duration={300}
->      <Nav.Link href="./Galerie/Galerie">Galerie Foto</Nav.Link>
-    </Link>
+         <Nav.Link href="/Galerie">Galerie Foto</Nav.Link>
+   
     </Nav>
     <Nav>
     <NavDropdown title="Preturi" id="collasible-nav-dropdown">
-       <Link
-    activeClass="active"
-    to="interior"
-    spy={true}
-    smooth={true}
-    offset={-240}
-    duration={300}
->  
-<NavDropdown.Item href="./Preturiinterior">Detaiing Interior</NavDropdown.Item>   
-    </Link> 
-        <NavDropdown.Item href="./Preturi/Preturi.html">Detailing Exterior</NavDropdown.Item>
+    
+<NavDropdown.Item href="/Preturiinterior">Detaiing Interior</NavDropdown.Item>   
+    
+        <NavDropdown.Item href="/Contact">Detailing Exterior</NavDropdown.Item>
       </NavDropdown>
-     <Link
-    activeClass="active"
-    to="contact"
-    spy={true}
-    smooth={true}
-    offset={-240}
-    duration={10}
->      <Nav.Link  href="./Contact/Contact"> Contact</Nav.Link>
-</Link>
+     <Nav.Link         href="/Contact"> Contact
+</Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
