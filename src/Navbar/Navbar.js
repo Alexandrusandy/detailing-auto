@@ -2,8 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavDropdown,Navbar,Nav, } from 'react-bootstrap';
 import './Navbar.css';
-
-import {Link} from 'react-router-dom';
+import { Link } from "react-scroll";
+import {NavLink} from 'react-router-dom';
 
 
 
@@ -44,8 +44,8 @@ const Navigation = () => {
     
         <NavDropdown.Item href="/Contact">Detailing Exterior</NavDropdown.Item>
       </NavDropdown>
-     <Link         to="/Contact"> Contact
-</Link>
+     <Nav.Link         > <NavLink to="/Contact">Contact</NavLink>
+</Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
