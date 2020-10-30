@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavDropdown,Navbar,Nav, } from 'react-bootstrap';
 import './Navbar.css';
 /*import { Link } from "react-scroll";*/
-/*import {NavLink} from 'react-router-dom';*/
+import {Link} from 'react-router-dom';
 
 
 
@@ -20,23 +20,24 @@ const Navigation = () => {
  
       <Nav.Link href="/Despre">Despre Noi</Nav.Link> 
      
-      <Nav.Link activeClassName="active" href="/Servicii">Servicii</Nav.Link>
-        
+      <Nav.Link><Link activeClassName="active" to="/Servicii">Servicii</Link>
+        </Nav.Link>
 
-        
-         <Nav.Link href="/Galerie">Galerie Foto</Nav.Link>
-    
+         <Nav.Link>
+         <Link to="/Galerie">Galerie Foto</Link>
+         </Nav.Link>
         
    
     </Nav>
     <Nav>
     <NavDropdown title="Preturi" id="collasible-nav-dropdown">
     
-       <NavDropdown.Item  href="/Preturiinterior">Detaiing Interior</NavDropdown.Item>  
+       <NavDropdown.Item> <Link to="/Preturiinterior">Detaiing Interior</Link></NavDropdown.Item>  
         <NavDropdown.Item href="/Contact">Detailing Exterior</NavDropdown.Item>
       </NavDropdown>
-   
-     <Nav.Link href="/Contact">Contact</Nav.Link>
+    <Nav.Link>
+     <Link href="/Contact">Contact</Link>
+      </Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
