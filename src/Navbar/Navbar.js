@@ -36,7 +36,7 @@ const Navigation = () => {
         <NavDropdown.Item href="/Contact">Detailing Exterior</NavDropdown.Item>
       </NavDropdown>
     <Nav.Link>
-     <Link href="/Contact">Contact</Link>
+     <Link to="/Contact">Contact</Link>
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>
