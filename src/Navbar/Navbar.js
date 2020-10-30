@@ -2,12 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavDropdown,Navbar,Nav, } from 'react-bootstrap';
 import './Navbar.css';
-/*import { Link } from "react-scroll";*/
+
 import {Link} from 'react-router-dom';
-
-
-
-
 
 const Navigation = () => {
   return(

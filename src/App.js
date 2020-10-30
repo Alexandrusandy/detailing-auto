@@ -1,9 +1,6 @@
 import React from 'react';
 import './App.css';
-/*import 'bootstrap/dist/css/bootstrap.min.css';*/
-/*import Poza from './poza/Poza';
-import Despre from './despre/despre';
-import Servicii from './Servicii/Servicii';*/
+
 import Footer from './Footer/Footer';
 import Navigation from './Navbar/Navbar';
 import Sections from './Sections/Sections';
@@ -29,14 +26,13 @@ import {BrowserRouter as Router} from 'react-router-dom';
 function App() {
 
   return (
-      <Router>
-    <div className="App"> 
-        <Navigation />
+    <Router>
+      <div className="App"> 
+         <Navigation />
          <Sections />
-        <Footer/>
-
-       </div>
-       </Router>
+         <Footer/>
+      </div>
+    </Router>
 
 
   );
