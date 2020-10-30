@@ -6,9 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: linear-gradient(-45deg, #C9C9C9, #E9C2FF, #9B979D, #C8C7C8);
+  background: linear-gradient(-45deg, #B836FF, #34D900);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 16s ease infinite;
 
 }
 @keyframes gradient {
