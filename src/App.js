@@ -1,14 +1,18 @@
 import React from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Poza from './poza/Poza';
+/*import 'bootstrap/dist/css/bootstrap.min.css';*/
+/*import Poza from './poza/Poza';
 import Despre from './despre/despre';
-import Servicii from './Servicii/Servicii';
+import Servicii from './Servicii/Servicii';*/
 import Footer from './Footer/Footer';
+import Navigation from './Navbar/Navbar';
+import Sections from './Sections/Sections';
+
+import {BrowserRouter as Router} from 'react-router-dom';
 
 
 /*import Mapps from './Contact/Map';
-*/
+
 /*const particlesOptions = {
   particles: {
     number: {
@@ -25,21 +29,14 @@ import Footer from './Footer/Footer';
 function App() {
 
   return (
-
-
+      <Router>
     <div className="App"> 
-   {/* <Particles className='particles'
-          params={particlesOptions}
-        />*/}
-          <Poza /> 
-      <Despre/>
-      {/*<Mapps/>*/}
-      <Servicii/>
-     
-      
-      <Footer/>
-      
-        </div>
+        <Navigation />
+         <Sections />
+        <Footer/>
+
+       </div>
+       </Router>
 
 
   );

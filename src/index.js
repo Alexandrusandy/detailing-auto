@@ -5,16 +5,25 @@ import 'tachyons';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
-import {BrowserRouter,Route} from 'react-router-dom';
+import * as serviceWorker from './serviceWorker';
+
+/*import {BrowserRouter,Route} from 'react-router-dom';*/
 
 import App from './App';
-import Navigation from './Navbar/Navbar';
+/*import Navigation from './Navbar/Navbar';
 import Preturiinterior from './Preturi/Preturiinterior';
 import Galerie from './Galerie/Galerie';
-import Contact from './Contact/Contact';
+import Contact from './Contact/Contact';*/
 
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+serviceWorker.unregister();
 
-function Main(){
+/*function Main(){
   return(
     <div>
            <Navigation />                
@@ -26,4 +35,4 @@ function Main(){
   )
 }
 
-ReactDOM.render(<BrowserRouter><Main></Main></BrowserRouter>,document.getElementById("root"));
+ReactDOM.render(<BrowserRouter><Main></Main></BrowserRouter>,document.getElementById("root"));*/
