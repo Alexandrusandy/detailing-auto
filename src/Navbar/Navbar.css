@@ -1,10 +1,5 @@
-.fix{
-	background-color: red;
-	  position: absolute;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: height .35s ease;
-       -o-transition: height .35s ease;
-          transition: height .35s ease;
-
+.fix:hover{
+	color: #00FFFF;
+		
 }
+

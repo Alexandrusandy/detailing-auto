@@ -1,5 +1,6 @@
 import React from 'react';
 import './Poza.css';
+import Despre from "../despre/despre"
 
 const Poza = () => {
 	return(
@@ -10,6 +11,7 @@ const Poza = () => {
  		 <div className='coverpoza'>
  		 <img style={{paddingTop:'0px'}}alt='logo'src="https://cosmetica-auto.ro/wp-content/uploads/2019/03/polish-auto-timisoara-profesional1.jpg"/>
 		</div>
+		<Despre/>
 		</div>
 
 )
