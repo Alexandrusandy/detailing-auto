@@ -31,7 +31,7 @@ const Contact=() =>{
        <div>
        <h5 class="fas fa-map-marker-alt pl2"> Strada intrarea saturn</h5>
        </div>
-       <div>  <h6 class="far fa-clock pl2">Program: Luni-Vineri 9:00-18:00</h6>
+       <div>  <h6 class="fas fa-clock pl2">Program: Luni-Vineri 9:00-18:00</h6>
 
        </div>
        </div>
