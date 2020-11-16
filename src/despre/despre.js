@@ -7,7 +7,7 @@ const Despre = ()=> {
 
       <div className="desprecss2 mv2  " id="despre-noi">
             <div className=" desprecss1  ">
-            <img className="" src="https://scontent.fotp3-3.fna.fbcdn.net/v/t1.0-9/90245723_108870610744910_8058398415928688640_n.jpg?_nc_cat=102&_nc_sid=09cbfe&_nc_ohc=YaW4YrcRoPcAX9imL9O&_nc_ht=scontent.fotp3-3.fna&oh=e22bd71bb7cc2cf1fb575db53c5e5262&oe=5FA8C565"
+            <img className="" src="https://scontent.fotp3-3.fna.fbcdn.net/v/t1.0-9/90245723_108870610744910_8058398415928688640_n.jpg?_nc_cat=102&ccb=2&_nc_sid=09cbfe&_nc_ohc=KraDaDZPUgIAX9ZVsZI&_nc_ht=scontent.fotp3-3.fna&oh=52e691244afee8f717e97857368a4e0a&oe=5FD83B65"
                  alt="" />
           </div>
           <div className=" ml2 ">
