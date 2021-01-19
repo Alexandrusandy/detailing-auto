@@ -11,7 +11,10 @@ const Despre = ()=> {
                  alt="" />
           </div>
           <div className=" ml2 ">
+          <br/>
                <h2 className="shadow-1">Despre noi</h2>
+               <br/>
+               <br/>
         <h6>La Oro Detailing folosim metode profesionale de spalare cu abur,care elimina rapid si eficient murdaria,petele,grasimile si alte substante contaminate de pe toate suprafetele.
 		</h6>
 		<h6>Serviciile noastre premium de detailing auto din Bucuresti includ tratamente de specialitate pentur plastic,detailing interior si îngrijirea a pielii,metoda noastra curata fara utilizarea substantelor chimice dure .

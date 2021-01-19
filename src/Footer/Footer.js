@@ -8,7 +8,7 @@ const Footer =() =>{
             <div className="footerSize">
              <div className=''>
            
-            <img style={{paddingTop:'0px'}}alt='logo'src="https://scontent.fotp3-1.fna.fbcdn.net/v/t1.0-9/129003031_200490851582885_5196760165926064333_n.jpg?_nc_cat=107&ccb=2&_nc_sid=09cbfe&_nc_ohc=KN3ufEILBHEAX-7wc7K&_nc_ht=scontent.fotp3-1.fna&oh=e09b11955c89b7da31651f1740c6105e&oe=6025DCF5"/>
+            <img  className="logoo" style={{paddingTop:'0px'}}alt='logo'src="https://scontent.fotp3-1.fna.fbcdn.net/v/t1.0-9/129003031_200490851582885_5196760165926064333_n.jpg?_nc_cat=107&ccb=2&_nc_sid=09cbfe&_nc_ohc=KN3ufEILBHEAX-7wc7K&_nc_ht=scontent.fotp3-1.fna&oh=e09b11955c89b7da31651f1740c6105e&oe=6025DCF5"/>
        </div>
        <div className="tc">
         <div>

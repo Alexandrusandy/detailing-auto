@@ -30,6 +30,7 @@ function App() {
       <div className="App"> 
          <Navigation />
          <Sections />
+         <br/>
          <Footer/>
       </div>
     </Router>
