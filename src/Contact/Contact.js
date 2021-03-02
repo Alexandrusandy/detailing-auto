@@ -23,7 +23,7 @@ const Contact=() =>{
             <div className="">
             <div className=" pa2">
      <div className='dimensiune '>
-         <img style={{paddingTop:'0px'}}alt='logo'src="https://scontent.fotp3-1.fna.fbcdn.net/v/t1.0-9/129003031_200490851582885_5196760165926064333_n.jpg?_nc_cat=107&ccb=2&_nc_sid=09cbfe&_nc_ohc=KN3ufEILBHEAX-7wc7K&_nc_ht=scontent.fotp3-1.fna&oh=e09b11955c89b7da31651f1740c6105e&oe=6025DCF5"/>
+         <img style={{paddingTop:'0px'}}alt='logo'src="https://scontent.fotp3-1.fna.fbcdn.net/v/t1.0-9/129003031_200490851582885_5196760165926064333_n.jpg?_nc_cat=107&ccb=3&_nc_sid=09cbfe&_nc_ohc=FydGYSpMPikAX8DbCYD&_nc_ht=scontent.fotp3-1.fna&oh=cb9694a29d1caad6d9955f1469f210d9&oe=606524F5"/>
        <div className="tc">
        <div>
        <a href="tel:0729 129 751"><h5 class="fas fa-phone pa2 text-white">0766129751</h5></a>
